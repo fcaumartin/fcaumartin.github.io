@@ -15,10 +15,11 @@
 
 .col {
     flex: 1;
+    margin-left: 20px;
 }
 
 .col:last-child {
-    margin-left: 20px;
+    margin-left: 0px;
 }
 
 div {
