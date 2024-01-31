@@ -9,6 +9,19 @@
     background-image: url('../pic/perso.jpg');
 }
 
+#project_title a {
+    color: #ffffff;
+}
+
+#project_title a:visited {
+    color: #ffffff;
+}
+
+#project_title a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
 .grid {
     display: flex;
 }
