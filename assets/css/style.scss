@@ -5,6 +5,10 @@
 
 @import "{{ site.theme }}";
 
+.page-header {
+    background-image: url('../pic/perso.jpg');
+}
+
 .grid {
     display: flex;
 }
