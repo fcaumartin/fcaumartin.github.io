@@ -1,0 +1,50 @@
+/* @theme afpa */
+
+@import 'gaia';
+
+h1 {
+  font-size: 1.8em;
+  /* top: 20px; */
+  /* position: absolute; */
+}
+
+/* 
+h2 {
+  font-size: 2em;
+} */
+
+
+section {
+  background-color: #fff;
+  background-image: url('https://marp.app/assets/hero-background.svg');
+  background-size: cover;
+  padding-top: 10px;
+}
+
+
+pre code {
+
+  color: black;
+  background-color: #f4f2ee;
+}
+
+pre {
+
+  /* color: black; */
+  background-color: #f4f2ee;
+  box-shadow: 5px 5px 15px #ddd;
+  border: 1px solid gainsboro;
+  margin-top: 0.3em;
+}
+
+p {
+  /* margin-top: 0.5em; */
+}
+
+.center {
+  text-align: center;
+}
+
+section.lead h1 {
+  text-align: center;
+}
