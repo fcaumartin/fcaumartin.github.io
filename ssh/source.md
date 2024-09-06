@@ -3,7 +3,6 @@ theme: afpa
 _class: lead
 paginate: true
 backgroundColor: #fff
-backgroundImage: 'linux2.webp'
 marp: true
 ----------------------------------------------------------------
 # Présentation Linux
@@ -18,7 +17,7 @@ Ce système sera repris par beaucoup d'entreprises et donnera naissance à une m
 Les survivants actuels:
 - **BSD** (**FreeBSD**, **NetBSD**, **OpenBSD**)
 - **iOS**, **macOSX**
-- **AIX**, **Solaris**, **HP-UX**
+- **AIX**, *Solaris*, **HP-UX**
 
 ----------------------------------------------------------------
 # Linux
@@ -51,18 +50,11 @@ Freebox, BouyguesBox..., Andoid utilisent aussi un noyau `Linux`
 
 `sudo` permet d'obtenir les droits `su` ou `root` pour exécuter une commande.
 
-Exemple:
-```
-sudo kill xxx
-```
-
-*Le système vous demande de saisir **votre** mot de passe !*
-
-*L'utilisateur qui lance cette commande doit être habilité (autorisé à utiliser `sudo`) !*
+`sudo kill xxx`
 
 
 ----------------------------------------------------------------
-# APT (Gestion des packages)
+# APT
 
 - Mettre à jour la liste de paquets
 `sudo apt update`

@@ -13,15 +13,15 @@
     </div>
     <div class="col">
        <div class="content">
-           <a href="/projet2" >
-           <p>Projet 2</p>
+           <a href="/ssh" >
+           <p>ssh</p>
            </a>
        </div>
     </div>
     <div class="col">
        <div class="content">
-           <a href="/projet3" >
-           <p>Projet 3</p>
+           <a href="/firewall" >
+           <p>firewall</p>
            </a>
        </div>
     </div>
