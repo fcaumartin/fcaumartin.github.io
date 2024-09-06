@@ -105,6 +105,49 @@ Pour manipuler les fichiers dans la console
 
 
 ----------------------------------------------------------------
+# Gestion des droits
+
+`chmod`
+
+|r|w|x|r|w|x|r|w|x|
+|-|-|-|-|-|-|-|-|-|
+|4|2|1|4|2|1|4|2|1|
+
+
+`setfacl`
+
+----------------------------------------------------------------
+# Gestion des utilisateurs
+
+`adduser`
+
+`passwd`
+
+`usermod`
+
+----------------------------------------------------------------
+# Gestion des services (systemd)
+
+`systemd` est les gestionnaire de services.
+
+`systemctl` est l'outil de gestion de `systemd`
+
+----------------------------------------------------------------
+# Gestion des services (systemd)
+
+
+
+| Commandes |
+|--|
+|`systemctl start apache2`|
+|`systemctl stop apache2`|
+|`systemctl restart apache2`|
+||
+|`systemctl enable apache2`|
+|`systemctl desable apache2`|
+
+**
+----------------------------------------------------------------
 # Ressources
 
 
