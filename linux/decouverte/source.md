@@ -124,35 +124,35 @@ Pour manipuler les fichiers dans la console
 ----------------------------------------------------------------
 # Gestion des droits
 
-
-
 ![width:100%](droits.svg)
 
-#### Combinaison binaire (exemple):
+#### Combinaison binaire (exemple)
+
 - lecture seule `r` = 4 
 - lecture + éxecution `r` + `x` = 4 + 1 = 5
 - lecture, écriture = `r` + `w` = 4 + 2 = 6
 
  `rwx rwx rx` = `7 7 5`
 
+
 ----------------------------------------------------------------
 # Gestion des droits
 
-La commande chmod permet de maniuler les droits sur les fichiers ou répertoires.
+La commande `chmod` permet de manipuler les droits sur les fichiers ou répertoires.
 
-droits rwx rwx r_x pour le dossier utilitaires
+droits `rwx` `rwx` `r_x` pour le dossier utilitaires
 ```bash
 chmod 775 utilitaires
 ```
 
 
-droits rwx ___ ___ pour le dossier perso
+droits `rwx` `___` `___` pour le dossier perso
 ```bash
 chmod 700 perso
 ```
 
 
-droits rwx rwx rwx pour le dossier commun
+droits `rwx` `rwx` `rwx` pour le dossier commun
 ```bash
 chmod 777 commun
 ```
@@ -160,8 +160,11 @@ chmod 777 commun
 ----------------------------------------------------------------
 # Gestion des droits
 
+Si vous utilisez le système de fichier `ext4`, vous pouvez utilisez le package `acl` qui fournit des fonctionnalités avancées de gestion des droits.
 
-`setfacl`
+**Exemple:**
+`setfacl -dR -m u:www-data:rwX -m u:dev01:rwX projet`
+
 
 ----------------------------------------------------------------
 # Gestion des utilisateurs
@@ -184,16 +187,17 @@ chmod 777 commun
 
 
 
-| Commandes |
-|--|
-|`systemctl start apache2`|
-|`systemctl stop apache2`|
-|`systemctl restart apache2`|
-||
-|`systemctl enable apache2`|
-|`systemctl disable apache2`|
+| Commandes | |
+|--|-|
+|`systemctl start apache2`| Démarrer le service **apache2**|
+|`systemctl stop apache2`| Arréter le service **apache2**|
+|`systemctl restart apache2`| Re démarrer le service|
+|||
+|`systemctl enable apache2`| Rendre actif au démarrage|
+|`systemctl disable apache2`||
 
-**
+`systemctl` permet d'afficher l'ensemble des services.
+
 ----------------------------------------------------------------
 # Ressources
 
