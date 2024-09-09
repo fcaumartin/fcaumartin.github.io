@@ -6,8 +6,10 @@ backgroundColor: #fff
 backgroundImage: 'linux2.webp'
 marp: true
 ----------------------------------------------------------------
-# Présentation Linux
-(20 minutes pour découvrir `Linux`)
+<!-- _color: white -->
+![bg](hubble.jpg)
+
+# 60 minutes pour découvrir `Linux`
 
 ----------------------------------------------------------------
 # Histoire d'Unix
@@ -99,21 +101,61 @@ Pour manipuler les fichiers dans la console
 |Liste des périphériques USB|`lsusb`|
 |Liste des périphériques `block` (disques durs) |`lsblk`|
 |Utilitaire de gestion des partitions |`fdisk /dev/sda`|
-|Afficher les addresses `IP` des interfaces réseaux|`ip a`|
+|Afficher les adresses `IP` des interfaces réseaux|`ip a`|
 |Liste des connexions réseaux en cours|`ss`|
-|Outils de découverte du réseau|`nmap`|
+|Outil de découverte du réseau|`nmap`|
 
 
 ----------------------------------------------------------------
 # Gestion des droits
 
-`chmod`
-
-|r|w|x|r|w|x|r|w|x|
-|-|-|-|-|-|-|-|-|-|
-|4|2|1|4|2|1|4|2|1|
 
 
+![width:100%](droits.svg)
+
+`r` lecture 
+`w` écriture 
+`x` exécution pour un fichier, positionner pour un répertoire  
+
+**Exemple:**
+`rwx rwx rx` =  lecture, écriture, positionnement pour le propriétaire, le groupe, pas le droit d'écrire pour les autres utilisateurs. 
+
+ 
+----------------------------------------------------------------
+# Gestion des droits
+
+
+
+![width:100%](droits.svg)
+
+#### Combinaison binaire (exemple):
+- lecture seule `r` = 4 
+- lecture + éxecution `r` + `x` = 4 + 1 = 5
+- lecture, écriture = `r` + `w` = 4 + 2 = 6
+
+ `rwx rwx rx` = `7 7 5`
+
+----------------------------------------------------------------
+# Gestion des droits
+
+La commande chmod permet de maniuler les droits sur les fichiers ou répertoires.
+
+droits rwx rwx r_x pour le dossier utilitaires
+```bash
+chmod 775 utilitaires
+```
+
+
+droits rwx ___ ___ pour le dossier perso
+```bash
+chmod 700 perso
+```
+
+
+droits rwx rwx rwx pour le dossier commun
+```bash
+chmod 777 commun
+```
 
 ----------------------------------------------------------------
 # Gestion des droits
@@ -133,7 +175,7 @@ Pour manipuler les fichiers dans la console
 ----------------------------------------------------------------
 # Gestion des services (systemd)
 
-`systemd` est les gestionnaire de services.
+`systemd` est le gestionnaire de services.
 
 `systemctl` est l'outil de gestion de `systemd`
 
@@ -149,7 +191,7 @@ Pour manipuler les fichiers dans la console
 |`systemctl restart apache2`|
 ||
 |`systemctl enable apache2`|
-|`systemctl desable apache2`|
+|`systemctl disable apache2`|
 
 **
 ----------------------------------------------------------------
